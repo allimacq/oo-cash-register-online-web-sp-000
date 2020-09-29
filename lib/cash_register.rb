@@ -11,7 +11,7 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
      #how many times to repeat the item in the array given the quantity
-    item_quantity = "#{title} " * @quantity
+    item_quantity = "#{@title} " * @quantity
     #converting to an array
     item = item_quantity.split
     @items.push(*item)
