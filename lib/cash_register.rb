@@ -37,16 +37,19 @@ class CashRegister
     end
   end
   
-  def items
-    #how many times to repeat the item in the array given the quantity
-    item_quantity = "#{title} " * @quantity
-    #converting to an array
-    items = item_quantity.split
-    ITEMS.push(*items)
-    p ITEMS
+  #def items
+    ##how many times to repeat the item in the array given the quantity
+    #item_quantity = "#{title} " * @quantity
+    ##converting to an array
+    #items = item_quantity.split
+    #ITEMS.push(*items)
+    #p ITEMS
    ##HOW DO I ADD THE EGGS?!
     #p ITEMS
-  end 
+  #end 
+  
+  def items
+  end
   
   
 end
