@@ -10,6 +10,7 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
+    #adding each item by quantity to an items array 
     @items << title.split * quantity
     @title = title
     @quantity = quantity
@@ -38,19 +39,12 @@ class CashRegister
     end
   end
   
-  #def items
-    ##how many times to repeat the item in the array given the quantity
-    #item_quantity = "#{title} " * @quantity
-    ##converting to an array
-    #items = item_quantity.split
-    #ITEMS.push(*items)
-    #p ITEMS
-   ##HOW DO I ADD THE EGGS?!
-    #p ITEMS
-  #end 
-  
   def items
-    p @items.flatten
+    @total_items = @items.flatten
+  end
+  
+  def void_last_transaction
+    
   end
   
   
