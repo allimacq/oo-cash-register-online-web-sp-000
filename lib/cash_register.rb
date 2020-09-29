@@ -4,12 +4,17 @@ class CashRegister
   
   
   def initialize(discount = 0)
-    items = [ ]
+    @items = [ ]
     @total = 0
     @discount = discount
   end
   
   def add_item(title, price, quantity = 1)
+     #how many times to repeat the item in the array given the quantity
+    item_quantity = "#{title} " * @quantity
+    #converting to an array
+    item = item_quantity.split
+    @items.push(*item)
     @title = title
     @quantity = quantity
     @price = price
@@ -49,7 +54,7 @@ class CashRegister
   #end 
   
   def items
-    p self
+    p @items
   end
   
   
