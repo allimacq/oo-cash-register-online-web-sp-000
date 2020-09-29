@@ -49,6 +49,7 @@ class CashRegister
   #end 
   
   def items
+    p self
   end
   
   
