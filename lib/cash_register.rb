@@ -38,7 +38,7 @@ class CashRegister
   end
   
   def items
-    p self.add_item(title, price, quantity)
+    p self
     ##how many times to repeat the item in the array given the quantity
     #item_quantity = "#{title} " * @quantity
     ##converting to an array
