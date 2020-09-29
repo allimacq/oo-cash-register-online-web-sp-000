@@ -11,7 +11,6 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @title = title
-    ITEMS << title
     @quantity = quantity
     @price = price
     @total += (price*quantity)
@@ -39,7 +38,7 @@ class CashRegister
   end
   
   def items
-    p self
+    p self.title
     ##how many times to repeat the item in the array given the quantity
     #item_quantity = "#{title} " * @quantity
     ##converting to an array
