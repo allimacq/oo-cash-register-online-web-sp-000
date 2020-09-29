@@ -11,6 +11,7 @@ class CashRegister
   
   def add_item(title, price, quantity = 1)
     @title = title
+    
     @quantity = quantity
     @price = price
     @total += (price*quantity)
@@ -46,7 +47,8 @@ class CashRegister
     #ITEMS.push(*items)
     #p ITEMS
    ##HOW DO I ADD THE EGGS?!
-    
+    ITEMS << title
+    p ITEMS
   end 
   
   
