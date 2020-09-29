@@ -44,7 +44,6 @@ class CashRegister
     items = item_quantity.split
     ITEMS.push(*items)
     p ITEMS
-    p self
    ##HOW DO I ADD THE EGGS?!
     #p ITEMS
   end 
